@@ -1,8 +1,13 @@
 import React from 'react'
+import SpecialtyCarousel from './BlackMenu/globalServices/services'
 
 const IndexPage = () => {
   return (
-    <div>IndexPage</div>
+    <div>
+
+       <SpecialtyCarousel/>
+
+    </div>
   )
 }
 
