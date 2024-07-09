@@ -2,11 +2,11 @@ import React, { useState,useEffect } from "react";
 import Explore from "./exploreDiv";
 import Selector from '../../CountrySelector';
 import ExplorePanel from "./ExplorePanel";
-
+import expert from "../../../assets/LandingPageHeader/second_Opinion_bg.png"
 const Expert = () =>{
 
     const divStyle = {
-        backgroundImage: `url( https://www.eglobaldoctors.com/assets/images/home/second_Opinion_bg.png )`,
+        backgroundImage: `url(${expert})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',

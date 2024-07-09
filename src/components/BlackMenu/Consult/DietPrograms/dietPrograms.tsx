@@ -342,7 +342,7 @@ const DietPrograms = () =>{
 
                 <h1 className="text-2xl font-bold mb-4">FEATURED CATEGORIES</h1>
                 <hr className="w-full bg-[#4b4b4b] h-1"></hr>
-                <div className="p-4 grid grid-cols-4 gap-4">
+                <div className="p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
 
                     {
                         features.map(feature=>(
@@ -499,7 +499,7 @@ const DietPrograms = () =>{
             <div className="mt-6 flex flex-col items-center justify-center gap-4">
 
                         <h2 className="text-4xl text-blue-700 font-bold">Our Nutritional Coaches</h2>
-                        <div className="px-16 grid grid-cols-5 gap-4">
+                        <div className="px-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                         
 
 {
@@ -553,7 +553,7 @@ details={ques.details}
 
 </div>
 
-<div className="w-full p-14 flex items-center justify-center">
+<div className="w-full p-14 flex flex-col md:flex-row items-center justify-center">
 
     <div className="flex flex-col gap-6">
 

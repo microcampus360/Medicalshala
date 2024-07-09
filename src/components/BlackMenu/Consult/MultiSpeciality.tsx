@@ -2,12 +2,12 @@ import React, { useState, ChangeEvent, useEffect } from 'react';
 import Explore from "./exploreDiv";
 import Selector from '../../CountrySelector';
 import ExplorePanel from './ExplorePanel';
-
+import multi from "../../../assets/LandingPageHeader/Multi-Specialty_bg.png"
 
 const Multi = () =>{
 
     const divStyle = {
-        backgroundImage: `url( https://www.eglobaldoctors.com/assets/images/home/Multi-Specialty_bg.png )`,
+        backgroundImage: `url(${multi} )`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',

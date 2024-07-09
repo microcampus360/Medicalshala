@@ -3,48 +3,66 @@ import { Swiper, SwiperSlide,useSwiper } from 'swiper/react';
 import 'swiper/css';
 import { MouseEventHandler } from 'react';
 
-import cardio from "../../../assets/LandingPageHeader/globalServices/specialities/cardio.png"
+import cardio from "../../../assets/LandingPageHeader/globalServices/specialities/anesth.png"
+import cardio1 from "../../../assets/LandingPageHeader/globalServices/specialities/cardio.png"
+import derm from "../../../assets/LandingPageHeader/globalServices/specialities/derma.png"
+import endo from "../../../assets/LandingPageHeader/globalServices/specialities/endo.png"
+import gastro from "../../../assets/LandingPageHeader/globalServices/specialities/gastro.png"
+import infec from "../../../assets/LandingPageHeader/globalServices/specialities/infec.png"
+import int from "../../../assets/LandingPageHeader/globalServices/specialities/internal.png"
+import neu from "../../../assets/LandingPageHeader/globalServices/specialities/neuro.png"
+import onco from "../../../assets/LandingPageHeader/globalServices/specialities/oncology.png"
+import opt from "../../../assets/LandingPageHeader/globalServices/specialities/ophthal.png"
+import orth from "../../../assets/LandingPageHeader/globalServices/specialities/ortho.png"
+import sur from "../../../assets/LandingPageHeader/globalServices/specialities/surgery.png"
 
 const specialties = [
   { image: cardio, title: 'Anesthesiology', link: '#' },
-  { image: cardio, title: 'Cardiology', link: '#' },
-  { image: cardio, title: 'Cardiology / Electrophysiology', link: '#' },
-  { image: cardio, title: 'Dermatology', link: '#' },
+  { image: cardio1, title: 'Cardiology', link: '#' },
+  { image: cardio1, title: 'Cardiology / Electrophysiology', link: '#' },
+  { image: derm, title: 'Dermatology', link: '#' },
   { image: cardio, title: 'Diabetology', link: '#' },
   { image: cardio, title: 'Emergency Medicine', link: '#' },
-  { image: cardio, title: 'Endocrinology', link: '#' },
+  { image: endo, title: 'Endocrinology', link: '#' },
   { image: cardio, title: 'ENT', link: '#' },
-  { image: cardio, title: 'Gastroenterology', link: '#' },
+  { image: gastro, title: 'Gastroenterology', link: '#' },
   { image: cardio, title: 'General Medicine', link: '#' },
   { image: cardio, title: 'General Surgery', link: '#' },
   { image: cardio, title: 'Geriatrics', link: '#' },
   { image: cardio, title: 'Hematology', link: '#' },
   { image: cardio, title: 'Homeopathy', link: '#' },
   { image: cardio, title: 'Hospitalist', link: '#' },
-  { image: cardio, title: 'Infectious Disease', link: '#' },
-  { image: cardio, title: 'Internal Medicine', link: '#' },
+  { image: infec, title: 'Infectious Disease', link: '#' },
+  { image: int, title: 'Internal Medicine', link: '#' },
   { image: cardio, title: 'Interventional Radiology', link: '#' },
   { image: cardio, title: 'Nephrology', link: '#' },
-  { image: cardio, title: 'Neurology', link: '#' },
+  { image: neu, title: 'Neurology', link: '#' },
   { image: cardio, title: 'Neurosurgery', link: '#' },
   { image: cardio, title: 'Nuclear Medicine', link: '#' },
   { image: cardio, title: 'Obstetrics & Gynecology', link: '#' },
-  { image: cardio, title: 'Oncology', link: '#' },
-  { image: cardio, title: 'Ophthalmology', link: '#' },
+  { image: onco, title: 'Oncology', link: '#' },
+  { image: opt, title: 'Ophthalmology', link: '#' },
   { image: cardio, title: 'Oral Surgery', link: '#' },
-  { image: cardio, title: 'Orthopedics', link: '#' },
+  { image: orth, title: 'Orthopedics', link: '#' },
   { image: cardio, title: 'Orthopedic Surgery', link: '#' },
   { image: cardio, title: 'Pain Management', link: '#' },
   { image: cardio, title: 'Pediatric Cardiology', link: '#' },
   { image: cardio, title: 'Pediatrics', link: '#' },
   { image: cardio, title: 'Physical Medicine', link: '#' },
-  { image: cardio, title: 'Plastic Surgery', link: '#' },
+  { image: sur, title: 'Plastic Surgery', link: '#' },
   { image: cardio, title: 'Psychiatry', link: '#' },
   { image: cardio, title: 'Psychology', link: '#' },
   { image: cardio, title: 'Pulmonary Medicine', link: '#' },
   { image: cardio, title: 'Radiology', link: '#' },
   { image: cardio, title: 'Rheumatology', link: '#' }
 ];
+
+const Triangle = () => {
+  return (
+    <div className="relative w-0 h-0 border-l-8 border-r-8 border-b-16 border-transparent border-b-blue-500"></div>
+  );
+};
+
 
 const LeftSwipe = () =>{
    
@@ -54,7 +72,7 @@ const LeftSwipe = () =>{
 
     <div className='absolute top-0 left-0 h-full flex items-center justify-center'>
 
-      <button onClick={()=>{swiper.slidePrev()}} className='rounded-full z-10 shadow p-4'> Prev </button>
+      <button onClick={()=>{swiper.slidePrev()}} className='rounded-full z-10 shadow p-4 font-bold text-2xl'> &lt; </button>
 
     </div>
 
@@ -73,7 +91,7 @@ const RightSwipe = () =>{
 
     <div className='absolute top-0 right-0 h-full flex items-center justify-center'>
 
-      <button onClick={()=>{swiper.slideNext()}} className='rounded-full z-10  shadow p-4'> Next </button>
+      <button onClick={()=>{swiper.slideNext()}} className=' text-2xl font-bold rounded-full z-10  shadow p-4'> &gt; </button>
 
     </div>
 
@@ -94,21 +112,19 @@ const SpecialtyCarousel = () => {
    
 
   return (
-    <div className="container mx-auto my-8">
+    <div className="container mx-auto my-8 p-8 overflow-hidden">
       <h2 className="text-3xl font-bold text-center mb-4">Our Specialties</h2>
       <div className="flex justify-center mb-4">
         <a href="#" className="text-blue-500">View All →</a>
       </div>
 
-      <div className='relative'>
+      <div className='relative overflow-hidden'>
 
       <Swiper
       spaceBetween={50}
       slidesPerView={4}
       pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
-      onSlideChange={() => console.log('slide change')}
+      
      
     >
       <LeftSwipe/>

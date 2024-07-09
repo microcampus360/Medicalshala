@@ -16,7 +16,7 @@ const Nutritionist = ({img,name,pos,country}: Field) =>{
     return(
         <>
 
-            <div className=" text-center rounded shadow-lg flex flex-col items-center justify-center">
+            <div className=" text-center shadow-lg flex bg-white flex-col items-center justify-center">
 
                 <div onMouseEnter={()=>{
                         setShow(1)
@@ -38,8 +38,8 @@ const Nutritionist = ({img,name,pos,country}: Field) =>{
                 </div>
               
                 <h2 className="font-semibold text-xl">{name}</h2>
-                <h2 className="text-lg">{pos}</h2>
-                <h2 className="text-lg">{country}</h2>
+                <h2 className="text-lg font-thin">{pos}</h2>
+                <h2 className="text-lg font-thin">{country}</h2>
 
 
             </div>

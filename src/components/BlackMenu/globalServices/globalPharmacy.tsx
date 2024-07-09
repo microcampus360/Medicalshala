@@ -27,8 +27,8 @@ const GlobalPharmacy = ()=>{
         <div className="w-full bg-gray-300">
 
         <div className="bg-white w-full">
-      <h2 className="text-5xl text-blue-700 font-bold mb-4 text-center">eGlobal Pharmacy</h2>
-      <h3 className="text-4xl text-gray-700 font-semibold mb-4 text-center ">eGlobal Pharmacy for USA</h3>
+      <h2 className="text-5xl text-blue-700 font-bold mb-16 text-center">eGlobal Pharmacy</h2>
+      <h3 className="text-4xl text-gray-700 font-semibold mb-8 p-6 text-center ">eGlobal Pharmacy for USA</h3>
 
       </div>
 
@@ -50,7 +50,7 @@ const GlobalPharmacy = ()=>{
           link="#"
         />
       </div>
-      <h3 className="">Note: Upon completion of your consultation, you will receive a flat 15% OFF code to order medicines.</h3>
+      <h3 className="font-thin"><span className="font-bold">Note:</span> Upon completion of your consultation, you will receive a flat 15% OFF code to order medicines.</h3>
     </div>
     <div className="p-6 bg-white w-full">
     <h3 className="text-4xl text-gray-700 font-semibold mb-4 text-center p-6 bg-white">eGlobal Pharmacy for India</h3>
@@ -73,7 +73,7 @@ const GlobalPharmacy = ()=>{
           link="#"
         />
       </div>
-      <h3 className="">Note: Upon completion of your consultation, you will receive a flat 15% OFF code to order medicines.</h3>
+      <h3 className="font-thin"><span className="font-bold">Note:</span> Upon completion of your consultation, you will receive a flat 15% OFF code to order medicines.</h3>
     </div>
              
     </div>

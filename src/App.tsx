@@ -13,22 +13,28 @@ import Covid19 from './components/BlackMenu/otherServices/covid19';
 import HomeCare from './components/BlackMenu/globalServices/homecare';
 import Diagnostics from './components/BlackMenu/globalServices/diagnostics';
 import GlobalPharmacy from './components/BlackMenu/globalServices/globalPharmacy';
+import AyurvedicCare from './components/BlackMenu/AyurvedicCare';
+import WellnessPlans from './components/BlackMenu/WellnessPlans';
+import CancerCare from './components/BlackMenu/CancerCare';
 
 function App() {
   return (
     <Routes>
       <Route path='/' element={<Layout/>}>
         <Route index element={<IndexPage/>}/>
-        <Route path='/primary' element={<Primary/>}/>
-        <Route path='/expert' element={<Expert/>}/>
-        <Route path='/multi' element={<Multi/>}/>
-        <Route path='/diet' element={<DietPrograms/>}/>
-        <Route path='/medicalCoun' element={<MedicalCounselling/>}/>
-        <Route path='/equipmentSupport' element={<Support/>}/>
-        <Route path='/covid19' element={<Covid19/>}/>
-        <Route path='/eglobalHomecare' element={<HomeCare/>}/>
-        <Route path='/eglobalDiagnostics' element={<Diagnostics/>}/>
-        <Route path='/eglobalPharmacy' element={<GlobalPharmacy/>}/>
+        <Route path='/ayurvedic-care' element={<AyurvedicCare/>}/>
+        <Route path='/wellness-plans' element={<WellnessPlans/>}/>
+        <Route path='/cancer-care' element={<CancerCare/>}/>
+        <Route path='/primary-consultation-telehealth-consultation' element={<Primary/>}/>
+        <Route path='/expert-second-medical-opinion' element={<Expert/>}/>
+        <Route path='/multispecialty-telehealth-consultation' element={<Multi/>}/>
+        <Route path='/diet-programs' element={<DietPrograms/>}/>
+        <Route path='/fmc' element={<MedicalCounselling/>}/>
+        <Route path='/equipmentsupport' element={<Support/>}/>
+        <Route path='/covid-19' element={<Covid19/>}/>
+        <Route path='/eglobal-homecare' element={<HomeCare/>}/>
+        <Route path='/eglobal-diagnostics' element={<Diagnostics/>}/>
+        <Route path='/eglobal-pharmacy' element={<GlobalPharmacy/>}/>
       </Route>
     </Routes>
   );

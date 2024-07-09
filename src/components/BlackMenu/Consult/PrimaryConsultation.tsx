@@ -2,13 +2,14 @@ import React, { useState, ChangeEvent, useEffect } from 'react';
 import Explore from "./exploreDiv";
 import Selector from '../../CountrySelector';
 import ExplorePanel from './ExplorePanel';
+import primary from "../../../assets/LandingPageHeader/Primary_Consultation.png"
 
 
 
 const Primary = () =>{
 
     const divStyle = {
-        backgroundImage: `url( https://www.eglobaldoctors.com/assets/images/home/Primary_Consultation.png )`,
+        backgroundImage: `url(${primary})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
