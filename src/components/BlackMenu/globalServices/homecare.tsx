@@ -1,6 +1,6 @@
 import React from "react";
 
-import homecare from "../../../assets/LandingPageHeader/globalServices/homecare/homecare_image.jpg"
+import homecare from "../../../assets/BlackMenu/globalServices/homecare/homecare_image.jpg"
 
 
 

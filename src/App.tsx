@@ -6,16 +6,22 @@ import IndexPage from './components/IndexPage';
 import Primary from './components/BlackMenu/Consult/PrimaryConsultation';
 import Expert from './components/BlackMenu/Consult/ExpertSecond';
 import Multi from './components/BlackMenu/Consult/MultiSpeciality';
-import DietPrograms from './components/BlackMenu/Consult/DietPrograms/dietPrograms';
-import MedicalCounselling from './components/BlackMenu/otherServices/FreeMedicalCounselling';
-import Support from './components/BlackMenu/otherServices/Support';
-import Covid19 from './components/BlackMenu/otherServices/covid19';
-import HomeCare from './components/BlackMenu/globalServices/homecare';
-import Diagnostics from './components/BlackMenu/globalServices/diagnostics';
-import GlobalPharmacy from './components/BlackMenu/globalServices/globalPharmacy';
+import DietPrograms from './components/BlackMenu/Consult/DietPrograms/DietPrograms';
+import MedicalCounselling from './components/BlackMenu/OtherServices/FreeMedicalCounselling';
+import Support from './components/BlackMenu/OtherServices/Support';
+import Covid19 from './components/BlackMenu/OtherServices/Covid19';
+import HomeCare from './components/BlackMenu/GlobalServices/Homecare';
+import Diagnostics from './components/BlackMenu/GlobalServices/Diagnostics';
+import GlobalPharmacy from './components/BlackMenu/GlobalServices/GlobalPharmacy';
 import AyurvedicCare from './components/BlackMenu/AyurvedicCare';
 import WellnessPlans from './components/BlackMenu/WellnessPlans';
 import CancerCare from './components/BlackMenu/CancerCare';
+import Pricing from './components/Pricing';
+import PatientVids from './components/PatientVideos';
+import News from './components/News';
+import Leadership from './components/Leadership';
+import Partner from './components/Partner';
+import Doctors from './components/Doctors';
 
 function App() {
   return (
@@ -35,6 +41,12 @@ function App() {
         <Route path='/eglobal-homecare' element={<HomeCare/>}/>
         <Route path='/eglobal-diagnostics' element={<Diagnostics/>}/>
         <Route path='/eglobal-pharmacy' element={<GlobalPharmacy/>}/>
+        <Route path='/pricing' element={<Pricing/>}/>
+        <Route path='/patient-vids' element={<PatientVids/>}/>
+        <Route path='/news' element={<News/>}/>
+        <Route path='/leadership' element={<Leadership/>}/>
+        <Route path='/partner' element={<Partner/>}/>
+        <Route path='/doctors' element={<Doctors/>}/>
       </Route>
     </Routes>
   );

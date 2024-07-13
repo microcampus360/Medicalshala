@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../../assets/logo.png'
 import menuIcon from '../../assets/Header/menu-icon.svg'
-
+import { Link } from 'react-router-dom';
 const Index = () => {
   return (
     <div className='sticky top-0 bg-white z-50'>
@@ -12,7 +12,7 @@ const Index = () => {
         <div className='flex gap-10 justify-center items-center'>
           <ul className='flex gap-5 justify-center items-center text-[#1850A0] text-lg font-semibold'>
             <li>How It Works</li>
-            <li>Pricing</li>
+            <li ><Link to='/pricing'>Pricing</Link></li>
             <li>FAQ</li>
             <li>About Us</li>
             <li>Offers</li>

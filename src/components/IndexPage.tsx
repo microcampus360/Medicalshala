@@ -8,8 +8,9 @@ import UAE from '../assets/IndexPage/flags/UAE.png';
 import UK from '../assets/IndexPage/flags/UK.png';
 import Canada from '../assets/IndexPage/flags/Canada.png';
 import { Link } from 'react-router-dom';
-import SpecialtyCarousel from './BlackMenu/globalServices/services';
+import SpecialtyCarousel from './BlackMenu/GlobalServices/Services';
 import Nutritionist from './BlackMenu/Consult/DietPrograms/Nutrisionist';
+import doctors from "../utils/doctors.json"
 
 const IndexPage = () => {
 
@@ -45,211 +46,7 @@ const IndexPage = () => {
   ];
 
 
-  const nutritionists = [
-    {
-      name: "Aakanksha Dixit",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Aanandita Pande",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aanandita_pande.jpeg"
-    },
-    {
-      name: "Anjali Agarwal",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/anjali_agarwal.jpg"
-    },
-    {
-      name: "Archana Arora",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/archana_arora.jpg"
-    },
-    {
-      name: "Daniyah Irfan",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/daniyah_irfan.jpg"
-    },
-    {
-      name: "Dhanyalakshmi Nithiyanandham",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/Dhanyalakshmi_Nithiyanandham.JPG"
-    },
-    {
-      name: "Divya Diwaker",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Dt Neha Suryawanshi",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Dt Shama Satarkar",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Jyothi Srinivas",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Karuna Ekambar",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Kavita Vinod",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Manjunath Muneshwar",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Mark Dodge",
-      pos: "NUTRITIONIST",
-      country: "United States",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Neelam Jain",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Neeraja Ajay Kunisetti",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Padma Kathi",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Pavitra Maragani",
-      pos: "NUTRITIONIST",
-      country: "United States",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Poonam Upadhyay",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Prasanna Arun",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Pravin Kamble",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Priya Sahni",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Razia Begum",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Revathi Prasad",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Sandhya Korvan",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Sayali Shah",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Shallu Bajaj",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Shikha Kothari",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Shikha Banthiya",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Shivapriya Periasamy",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Shweta Siddharth",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Sirisha Medisetty",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Sri Sri Jayantha",
-      pos: "NUTRITIONIST",
-      country: "United States",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    },
-    {
-      name: "Supriya Srivastava",
-      pos: "NUTRITIONIST",
-      country: "India",
-      img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-    }]
+  
 
 
   return (
@@ -310,24 +107,29 @@ const IndexPage = () => {
       <div className="px-16 py-4 grid grid-cols-2  md:grid-cols-4 lg:grid-cols-5 gap-4">
                         
 
-                        {
-                            nutritionists.map(nut=>(
-                                <Nutritionist
+      {
+            doctors.map((doc,index)=>{
+
+              if(index>100)return (<></>)
+
+ return (             
+<Nutritionist
+
+img={doc.image_url}
+name={doc.name}
+pos={doc.designation}  
+country={doc.country}   
+/>
+ )
+})
+}
                         
-                                    img={nut.img}
-                                    name={nut.name}
-                                    pos={nut.pos}  
-                                    country={nut.country}   
-                                />
-                            ))
-                        }
                         
                         
                         
                         
                         
-                        
-                                                </div>
+    </div>
 
 
 

@@ -1,8 +1,8 @@
 import React, { useState, ChangeEvent, useEffect } from 'react';
-import Explore from "./exploreDiv";
+import Explore from "./ExploreDiv";
 import Selector from '../../CountrySelector';
 import ExplorePanel from './ExplorePanel';
-import multi from "../../../assets/LandingPageHeader/Multi-Specialty_bg.png"
+import multi from "../../../assets/BlackMenu/Multi-Specialty_bg.png"
 
 const Multi = () =>{
 

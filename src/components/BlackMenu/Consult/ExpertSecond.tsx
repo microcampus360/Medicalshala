@@ -1,8 +1,8 @@
 import React, { useState,useEffect } from "react";
-import Explore from "./exploreDiv";
+import Explore from "./ExploreDiv";
 import Selector from '../../CountrySelector';
 import ExplorePanel from "./ExplorePanel";
-import expert from "../../../assets/LandingPageHeader/second_Opinion_bg.png"
+import expert from "../../../assets/BlackMenu/second_Opinion_bg.png"
 const Expert = () =>{
 
     const divStyle = {

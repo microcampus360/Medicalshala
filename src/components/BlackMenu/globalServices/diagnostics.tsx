@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import apolloDiagnosticsLogo from '../../../assets/LandingPageHeader/globalServices/homecare/diag.png';
+import apolloDiagnosticsLogo from '../../../assets/BlackMenu/globalServices/homecare/diag.png';
 
 const Diagnostics: React.FC = () => {
   return (

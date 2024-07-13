@@ -1,5 +1,5 @@
 import React from "react";
-import Explore from "./exploreDiv";
+import Explore from "./ExploreDiv";
 
 
 interface Country{

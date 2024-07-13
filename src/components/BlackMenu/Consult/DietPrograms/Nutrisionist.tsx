@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 
 interface Field{
-    img : string,
+    img : string ,
     name : String,
-    pos : String,
+    pos : string | undefined,
     country : String
 }
 

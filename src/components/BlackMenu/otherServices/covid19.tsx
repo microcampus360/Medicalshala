@@ -1,8 +1,8 @@
 import React from 'react';
-import aapi from "../../../assets/LandingPageHeader/OtherServices/aapi.png"
-import ind from "../../../assets/LandingPageHeader/OtherServices/ind.png"
-import sewa from "../../../assets/LandingPageHeader/OtherServices/sewa.jpg"
-import usa from "../../../assets/LandingPageHeader/OtherServices/usa.png"
+import aapi from "../../../assets/BlackMenu/OtherServices/aapi.png"
+import ind from "../../../assets/BlackMenu/OtherServices/ind.png"
+import sewa from "../../../assets/BlackMenu/OtherServices/sewa.jpg"
+import usa from "../../../assets/BlackMenu/OtherServices/usa.png"
 
 const Covid19 = () => {
   return (

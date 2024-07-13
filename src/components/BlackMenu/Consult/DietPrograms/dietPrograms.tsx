@@ -1,18 +1,18 @@
 import Selector from "../../../CountrySelector";
 import React, { useState,useEffect } from "react";
-import Feature from "./featureCat";
+import Feature from "./FeatureCat";
 import Nutritionist from "./Nutrisionist";
 import ToggleBlock from "./ToggleBlock";
 
-import diabetes from "../../../../assets/LandingPageHeader/diet/diabetes.png"
-import detox from "../../../../assets/LandingPageHeader/diet/detox.png"
-import child from "../../../../assets/LandingPageHeader/diet/child_nutrition.png"
-import gut from "../../../../assets/LandingPageHeader/diet/gut_health.png"
-import menopause from "../../../../assets/LandingPageHeader/diet/menopause.png" 
-import reversal from "../../../../assets/LandingPageHeader/diet/reversal.png"
-import sports from "../../../../assets/LandingPageHeader/diet/sportsnutrition.png"
-import weight from "../../../../assets/LandingPageHeader/diet/weightloss.png"
-import service from "../../../../assets/LandingPageHeader/diet/service.png"
+import diabetes from "../../../../assets/BlackMenu/diet/diabetes.png"
+import detox from "../../../../assets/BlackMenu/diet/detox.png"
+import child from "../../../../assets/BlackMenu/diet/child_nutrition.png"
+import gut from "../../../../assets/BlackMenu/diet/gut_health.png"
+import menopause from "../../../../assets/BlackMenu/diet/menopause.png" 
+import reversal from "../../../../assets/BlackMenu/diet/reversal.png"
+import sports from "../../../../assets/BlackMenu/diet/sportsnutrition.png"
+import weight from "../../../../assets/BlackMenu/diet/weightloss.png"
+import service from "../../../../assets/BlackMenu/diet/service.png"
 
 
 const DietPrograms = () =>{
@@ -42,210 +42,235 @@ const DietPrograms = () =>{
       ];
 
     const nutritionists = [
-        {
-          name: "Aakanksha Dixit",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Aanandita Pande",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aanandita_pande.jpeg"
-        },
-        {
-          name: "Anjali Agarwal",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/anjali_agarwal.jpg"
-        },
-        {
-          name: "Archana Arora",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/archana_arora.jpg"
-        },
-        {
-          name: "Daniyah Irfan",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/daniyah_irfan.jpg"
-        },
-        {
-          name: "Dhanyalakshmi Nithiyanandham",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/Dhanyalakshmi_Nithiyanandham.JPG"
-        },
-        {
-          name: "Divya Diwaker",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Dt Neha Suryawanshi",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Dt Shama Satarkar",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Jyothi Srinivas",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Karuna Ekambar",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Kavita Vinod",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Manjunath Muneshwar",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Mark Dodge",
-          pos: "NUTRITIONIST",
-          country: "United States",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Neelam Jain",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Neeraja Ajay Kunisetti",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Padma Kathi",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Pavitra Maragani",
-          pos: "NUTRITIONIST",
-          country: "United States",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Poonam Upadhyay",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Prasanna Arun",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Pravin Kamble",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Priya Sahni",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Razia Begum",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Revathi Prasad",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Sandhya Korvan",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Sayali Shah",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Shallu Bajaj",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Shikha Kothari",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Shikha Banthiya",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Shivapriya Periasamy",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Shweta Siddharth",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Sirisha Medisetty",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Sri Sri Jayantha",
-          pos: "NUTRITIONIST",
-          country: "United States",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        },
-        {
-          name: "Supriya Srivastava",
-          pos: "NUTRITIONIST",
-          country: "India",
-          img: "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
-        }]
+    {
+        "name": "Aakanksha Dixit",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aakanksha_dixit.jpg"
+    },
+    {
+        "name": "Aanandita Pande",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/aanandita_pande.jpeg"
+    },
+    {
+        "name": "Anjali Agarwal",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/anjali_agarwal.jpg"
+    },
+    {
+        "name": "Archana Arora",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/archana_arora.jpg"
+    },
+    {
+        "name": "Daniyah Irfan",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/daniyah_irfan.jpg"
+    },
+    {
+        "name": "Dhanyalakshmi Nithiyanandham",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/Dhanyalakshmi_Nithiyanandham.JPG"
+    },
+    {
+        "name": "Divya Diwaker",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/divya_diwaker.jpg"
+    },
+    {
+        "name": "Dt Neha Suryawanshi",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/doctors/dt_neha_suryawanshi_534b.jpg"
+    },
+    {
+        "name": "Dt Shama Satarkar",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/dt_shama_satarkar.jpeg"
+    },
+    {
+        "name": "Jyothi Srinivas",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/jyothi_Srinivas.jpg"
+    },
+    {
+        "name": "Karuna Ekambar",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/karuna_ekambar.jpeg"
+    },
+    {
+        "name": "Kavita Vinod",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/kavita_vinod.jpg"
+    },
+    {
+        "name": "Manjunath Muneshwar",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/manjunath_muneshwar.jpg"
+    },
+    {
+        "name": "Mark Dodge",
+        "designation": "NUTRITIONIST",
+        "country": "United States",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/mark_dodge.jpg"
+    },
+    {
+        "name": "Neelam Jain",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/Neelam_Jain.jpg"
+    },
+    {
+        "name": "Neeraja Ajay Kunisetti",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/kunisetti_reddy.jpg"
+    },
+    {
+        "name": "Padma Kathi",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/padma_Kathi.jpg"
+    },
+    {
+        "name": "Pavitra Maragani",
+        "designation": "NUTRITIONIST",
+        "country": "United States",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/pavitra_maragani.jpg"
+    },
+    {
+        "name": "Poonam Upadhyay",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/poonam_upadhyay.jpeg"
+    },
+    {
+        "name": "Prasanna Arun",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/Prasanna_Arun.jpg"
+    },
+    {
+        "name": "Pravin Kamble",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/pravin_kamble.jpg"
+    },
+    {
+        "name": "Priya Sahni",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/priya_sahni.jpg"
+    },
+    {
+        "name": "Razia Begum",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/razia_begum.jpg"
+    },
+    {
+        "name": "Revathi Prasad",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/revathi_prasad.jpg"
+    },
+    {
+        "name": "Sandhya Korvan",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/sandhya_korvan.jpeg"
+    },
+    {
+        "name": "Sayali Shah",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/sayali_shah.jpg"
+    },
+    {
+        "name": "Shallu Bajaj",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/shallu_bajaj.jpeg"
+    },
+    {
+        "name": "Shikha Kothari",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/shikha_kothari.jpeg"
+    },
+    {
+        "name": "Shikha Banthiya",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/shikha_banthiya.jpeg"
+    },
+    {
+        "name": "Shivapriya Periasamy",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/shivapriya_periasamy.jpeg"
+    },
+    {
+        "name": "Shweta Siddharth",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/shweta_siddharth.jpeg"
+    },
+    {
+        "name": "Sirisha Medisetty",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/sirisha_medisetty.jpeg"
+    },
+    {
+        "name": "Sri Sri jayantha",
+        "designation": "NUTRITIONIST",
+        "country": "United States",
+        "image_url": "./assets/images/defaults/default_doc_profile.jpg"
+    },
+    {
+        "name": "Supriya Srivastava",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/supriya_srivastava.jpeg"
+    },
+    {
+        "name": "Surender Gaddam",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/surender_gaddam.jpg"
+    },
+    {
+        "name": "Swapna Rajaram",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/swapna_rajaram.jpg"
+    },
+    {
+        "name": "Vijimuthumari Marimuthu",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/vijimuthumari_marimuthu.jpeg"
+    },
+    {
+        "name": "Yukta Sinha",
+        "designation": "NUTRITIONIST",
+        "country": "India",
+        "image_url": "https://storage.eglobaldoctors.com/assets/updated_doctor_profiles/yukta_sinha.jpg"
+    }
+]
 
     const features = [
         {
@@ -506,10 +531,10 @@ const DietPrograms = () =>{
     nutritionists.map(nut=>(
         <Nutritionist
 
-            img={nut.img}
-            name={nut.name}
-            pos={nut.pos}  
-            country={nut.country}   
+            img={nut["image_url"]}
+            name={nut["name"]}
+            pos={nut["designation"]}  
+            country={nut["country"]}   
         />
     ))
 }

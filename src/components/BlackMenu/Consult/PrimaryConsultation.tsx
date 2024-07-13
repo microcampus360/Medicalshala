@@ -1,8 +1,8 @@
 import React, { useState, ChangeEvent, useEffect } from 'react';
-import Explore from "./exploreDiv";
+import Explore from "./ExploreDiv";
 import Selector from '../../CountrySelector';
 import ExplorePanel from './ExplorePanel';
-import primary from "../../../assets/LandingPageHeader/Primary_Consultation.png"
+import primary from "../../../assets/BlackMenu/Primary_Consultation.png"
 
 
 
@@ -128,6 +128,7 @@ const Primary = () =>{
         </div>
 
       </div>
+      
       <div className="w-full flex flex-col gap-4 justify-center items-center">
 
           <button onClick={()=>{ if(explore == 0){setExplore(1)} else setExplore(0) }} className="border border-blue-500 rounded p-2 text-xl text-blue-600 font-semibold">Explore Now</button>

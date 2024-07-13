@@ -3,18 +3,18 @@ import { Swiper, SwiperSlide,useSwiper } from 'swiper/react';
 import 'swiper/css';
 import { MouseEventHandler } from 'react';
 
-import cardio from "../../../assets/LandingPageHeader/globalServices/specialities/anesth.png"
-import cardio1 from "../../../assets/LandingPageHeader/globalServices/specialities/cardio.png"
-import derm from "../../../assets/LandingPageHeader/globalServices/specialities/derma.png"
-import endo from "../../../assets/LandingPageHeader/globalServices/specialities/endo.png"
-import gastro from "../../../assets/LandingPageHeader/globalServices/specialities/gastro.png"
-import infec from "../../../assets/LandingPageHeader/globalServices/specialities/infec.png"
-import int from "../../../assets/LandingPageHeader/globalServices/specialities/internal.png"
-import neu from "../../../assets/LandingPageHeader/globalServices/specialities/neuro.png"
-import onco from "../../../assets/LandingPageHeader/globalServices/specialities/oncology.png"
-import opt from "../../../assets/LandingPageHeader/globalServices/specialities/ophthal.png"
-import orth from "../../../assets/LandingPageHeader/globalServices/specialities/ortho.png"
-import sur from "../../../assets/LandingPageHeader/globalServices/specialities/surgery.png"
+import cardio from "../../../assets/BlackMenu/globalServices/specialities/anesth.png"
+import cardio1 from "../../../assets/BlackMenu/globalServices/specialities/cardio.png"
+import derm from "../../../assets/BlackMenu/globalServices/specialities/derma.png"
+import endo from "../../../assets/BlackMenu/globalServices/specialities/endo.png"
+import gastro from "../../../assets/BlackMenu/globalServices/specialities/gastro.png"
+import infec from "../../../assets/BlackMenu/globalServices/specialities/infec.png"
+import int from "../../../assets/BlackMenu/globalServices/specialities/internal.png"
+import neu from "../../../assets/BlackMenu/globalServices/specialities/neuro.png"
+import onco from "../../../assets/BlackMenu/globalServices/specialities/oncology.png"
+import opt from "../../../assets/BlackMenu/globalServices/specialities/ophthal.png"
+import orth from "../../../assets/BlackMenu/globalServices/specialities/ortho.png"
+import sur from "../../../assets/BlackMenu/globalServices/specialities/surgery.png"
 
 const specialties = [
   { image: cardio, title: 'Anesthesiology', link: '#' },

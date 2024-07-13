@@ -1,8 +1,8 @@
 import React from "react";
-import vpharm from "../../../assets/LandingPageHeader/globalServices/homecare/vpharm.png"
-import shager from "../../../assets/LandingPageHeader/globalServices/homecare/shager.png"
-import medtube from "../../../assets/LandingPageHeader/globalServices/homecare/medplus.jpg"
-import apollo from "../../../assets/LandingPageHeader/globalServices/homecare/apollo.svg"
+import vpharm from "../../../assets/BlackMenu/globalServices/homecare/vpharm.png"
+import shager from "../../../assets/BlackMenu/globalServices/homecare/shager.png"
+import medtube from "../../../assets/BlackMenu/globalServices/homecare/medplus.jpg"
+import apollo from "../../../assets/BlackMenu/globalServices/homecare/apollo.svg"
 
 
 const PharmacyCard: React.FC<{ name: string; description: string; logo: string; link: string }> = ({ name, description, logo, link }) => {
