@@ -8,28 +8,31 @@ import UAE from '../assets/IndexPage/flags/UAE.png';
 import UK from '../assets/IndexPage/flags/UK.png';
 import Canada from '../assets/IndexPage/flags/Canada.png';
 import { Link } from 'react-router-dom';
+import SpecialtyCarousel from './BlackMenu/GlobalServices/Services';
+import Nutritionist from './BlackMenu/Consult/DietPrograms/Nutrisionist';
+import doctors from "../utils/doctors.json"
 
 const IndexPage = () => {
 
   const consultDoctorItems = [
-    { label: 'Primary Consultation', link: '#' },
-    { label: 'Expert Second Medical Option', link: '#' },
-    { label: 'Multi-Speciality Consultation', link: '#' },
-    { label: 'Diet Consultation', link: '#' }
+    { label: 'Primary Consultation', link: '/primary-consultation-telehealth-consultation' },
+    { label: 'Expert Second Medical Option', link: '/expert-second-medical-opinion' },
+    { label: 'Multi-Speciality Consultation', link: '/multispecialty-telehealth-consultation' },
+    { label: 'Diet Consultation', link: '/diet-programs' }
   ];
 
   const medicalshalaServicesItems = [
     { label: 'Our Specialities', link: '#' },
     { label: 'Docters', link: '#' },
-    { label: 'Medicalshala Pharmacy', link: '#' },
-    { label: 'Medicalshala Diagnostics', link: '#' },
-    { label: 'Medicalshala Homecare', link: '#' },
+    { label: 'Medicalshala Pharmacy', link: '/eglobal-pharmacy' },
+    { label: 'Medicalshala Diagnostics', link: '/eglobal-diagnostics' },
+    { label: 'Medicalshala Homecare', link: '/eglobal-homecare' },
   ];
 
   const otherServicesItems = [
-    { label: 'Free Medical Counsiling', link: '#' },
-    { label: 'Equipment Support', link: '#' },
-    { label: 'Covid 19', link: '#' },
+    { label: 'Free Medical Counsiling', link: '/fmc' },
+    { label: 'Equipment Support', link: '/equipmentsupport' },
+    { label: 'Covid 19', link: '/covid-19' },
   ];
 
   const flags = [
@@ -42,12 +45,16 @@ const IndexPage = () => {
     {name : 'UK', source : UK},
   ];
 
+
+  
+
+
   return (
     <div className='h-full'>
       <div className='relative h-[80vh]'>
         <ul className='bg-black text-white flex justify-around font-semibold p-2 text-lg cursor-pointer'>
           <li><Dropdown title="Consult Doctor" items={consultDoctorItems} /></li>
-          <li>Diet Programs</li>
+          <Link to='/diet-programs'>Diet Programs</Link>
           <Link to='/ayurvedic-care'>Ayurvedic Care</Link>
           <Link to='/wellness-plans'>Wellness Plans</Link>
           <Link to='/cancer-care'>Cancer Care</Link>
@@ -83,6 +90,54 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div>
+
+        <SpecialtyCarousel/>
+
+    <div className="container mx-auto my-2 w-full ">
+      <h2 className="text-3xl font-bold text-center mb-4">Featured Doctors</h2>
+      <div className="flex justify-center mb-4">
+        <a href="#" className="text-blue-500">View All →</a>
+      </div>
+
+      <div className='bg-gray-300 w-full '>
+
+      <div className="px-16 py-4 grid grid-cols-2  md:grid-cols-4 lg:grid-cols-5 gap-4">
+                        
+
+      {
+            doctors.map((doc,index)=>{
+
+              if(index>100)return (<></>)
+
+ return (             
+<Nutritionist
+
+img={doc.image_url}
+name={doc.name}
+pos={doc.designation}  
+country={doc.country}   
+/>
+ )
+})
+}
+                        
+                        
+                        
+                        
+                        
+                        
+    </div>
+
+
+
+      </div>
+
+
+    </div>
+
       </div>
     </div>
   );
