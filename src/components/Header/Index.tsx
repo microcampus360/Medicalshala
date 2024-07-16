@@ -19,12 +19,12 @@ const Index = () => {
             <li className='flex gap-2 items-center'>More <img src={menuIcon} className='w-10 h-10' alt='menuIcon'/></li>
           </ul>
           <div className='bg-[#1850A0] p-5 flex m-5 rounded-xl gap-5 shadow-md shadow-slate-400'>
-            <div className='bg-white text-[#1850A0] px-8 py-2 rounded-full font-bold cursor-pointer text-lg'>
-              login
-            </div>
-            <div className='border-white border-2 text-white px-6 py-2 rounded-full font-bold cursor-pointer'>
-              Register
-            </div>
+            <button  className='bg-white text-[#1850A0] px-8 py-2 rounded-full font-bold cursor-pointer text-lg'>
+            <Link to='/login'>login</Link>
+            </button>
+            <button className='border-white border-2 text-white px-6 py-2 rounded-full font-bold cursor-pointer'>
+            <Link to='/login'>Register</Link>
+            </button>
           </div>
         </div>
       </div>

@@ -1,31 +1,31 @@
 import React, { useEffect, useState } from "react";
-import primary from "../assets/partner/Business_landing_page_banner.png"
+import primary from "../../../assets/partner/Business_landing_page_banner.png"
 
-import gr1 from "../assets/partner/Group 14934.png"
+import gr1 from "../../../assets/partner/Group 14934.png"
 
-import gr2 from "../assets/partner/Group 14936.png"
+import gr2 from "../../../assets/partner/Group 14936.png"
 import { Swiper, SwiperSlide,useSwiper } from 'swiper/react';
 import 'swiper/css';
-import gr3 from "../assets/partner/Group 14938.png"
+import gr3 from "../../../assets/partner/Group 14938.png"
 
-import world from "../assets/partner/world_map.jpg"
-import two from "../assets/partner/Healthconsultation feature icon.png"
-import pharm from "../assets/partner/no insuarance needed icon.png"
-import multi from "../assets/partner/health privacy icon.png"
-import cust from "../assets/partner/Doctor referal icon.png"
-import holis from "../assets/partner/Save money icon.png"
-import med from "../assets/partner/Medical prescription icon.png"
+import world from "../../../assets/partner/world_map.jpg"
+import two from "../../../assets/partner/Healthconsultation feature icon.png"
+import pharm from "../../../assets/partner/no insuarance needed icon.png"
+import multi from "../../../assets/partner/health privacy icon.png"
+import cust from "../../../assets/partner/Doctor referal icon.png"
+import holis from "../../../assets/partner/Save money icon.png"
+import med from "../../../assets/partner/Medical prescription icon.png"
 
-import one from "../assets/partner/aapi (1).png"
-import to from "../assets/partner/Apollo-Diagnostics_logo.png"
-import three from "../assets/partner/ata.png"
-import four from "../assets/partner/aapyaya_logo.png"
-import five from "../assets/partner/h_and_c_logo.png"
-import six from "../assets/partner/Sunshine Hospitals_Logo.png"
-import seven from "../assets/partner/tana1.png"
-import eight from "../assets/partner/whatsashore_logo.png"
+import one from "../../../assets/partner/aapi (1).png"
+import to from "../../../assets/partner/Apollo-Diagnostics_logo.png"
+import three from "../../../assets/partner/ata.png"
+import four from "../../../assets/partner/aapyaya_logo.png"
+import five from "../../../assets/partner/h_and_c_logo.png"
+import six from "../../../assets/partner/Sunshine Hospitals_Logo.png"
+import seven from "../../../assets/partner/tana1.png"
+import eight from "../../../assets/partner/whatsashore_logo.png"
 
-import service from "../assets/partner/oncology_footer.png"
+import service from "../../../assets/partner/oncology_footer.png"
 
 
 

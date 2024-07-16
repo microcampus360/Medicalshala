@@ -16,12 +16,15 @@ import GlobalPharmacy from './components/BlackMenu/GlobalServices/GlobalPharmacy
 import AyurvedicCare from './components/BlackMenu/AyurvedicCare';
 import WellnessPlans from './components/BlackMenu/WellnessPlans';
 import CancerCare from './components/BlackMenu/CancerCare';
-import Pricing from './components/Pricing';
-import PatientVids from './components/PatientVideos';
-import News from './components/News';
-import Leadership from './components/Leadership';
-import Partner from './components/Partner';
-import Doctors from './components/Doctors';
+import Pricing from './components/MainMenu/MoreOptions/Pricing';
+import PatientVids from './components/MainMenu/MoreOptions/PatientVideos';
+import News from './components/MainMenu/MoreOptions/News';
+import Leadership from './components/MainMenu/MoreOptions/Leadership';
+import Partner from './components/MainMenu/MoreOptions/Partner';
+import Doctors from './components/MainMenu/MoreOptions/Doctors';
+import LognRegister from './components/LognRegister';
+import RegistrationFormPatient from './components/RegisterPatient';
+import PatientLogin from './components/PatientLogin';
 
 function App() {
   return (
@@ -47,6 +50,9 @@ function App() {
         <Route path='/leadership' element={<Leadership/>}/>
         <Route path='/partner' element={<Partner/>}/>
         <Route path='/doctors' element={<Doctors/>}/>
+        <Route path='/login' element={<LognRegister/>}/>
+        <Route path='/patient-register' element={<RegistrationFormPatient/>}/>
+        <Route path='/patient-login' element={<PatientLogin/>}/>
       </Route>
     </Routes>
   );

@@ -1,20 +1,20 @@
 import React, { useState } from "react"
-import primary from "../assets/pricing/pricing_new.png"
-import prescription from "../assets/pricing/prescription.png"
-import ver from "../assets/pricing/verified-user.png"
-import sin1 from "../assets/pricing/sin1.png"
-import sin2 from "../assets/pricing/sin2.png"
-import sin3 from "../assets/pricing/sin3.png"
-import ExplorePanel from "./BlackMenu/Consult/ExplorePanel"
+import primary from "../../../assets/pricing/pricing_new.png"
+import prescription from "../../../assets/pricing/prescription.png"
+import ver from "../../../assets/pricing/verified-user.png"
+import sin1 from "../../../assets/pricing/sin1.png"
+import sin2 from "../../../assets/pricing/sin2.png"
+import sin3 from "../../../assets/pricing/sin3.png"
+import ExplorePanel from "../../BlackMenu/Consult/ExplorePanel"
 
-import bronzePricing from '../assets/WellnessPlans/bronze-pricing-india.png'
-import bronzePackage from '../assets/WellnessPlans/bronzepackage-icon.png'
-import silverPricing from '../assets/WellnessPlans/silver-pricing-india.png'
-import silverPackage from '../assets/WellnessPlans/silverpackage-icon.png'
-import goldPricing from '../assets/WellnessPlans/gold-pricing-india.png'
-import goldPackage from '../assets/WellnessPlans/goldpackage-icon.png'
+import bronzePricing from '../../../assets/WellnessPlans/bronze-pricing-india.png'
+import bronzePackage from '../../../assets/WellnessPlans/bronzepackage-icon.png'
+import silverPricing from '../../../assets/WellnessPlans/silver-pricing-india.png'
+import silverPackage from '../../../assets/WellnessPlans/silverpackage-icon.png'
+import goldPricing from '../../../assets/WellnessPlans/gold-pricing-india.png'
+import goldPackage from '../../../assets/WellnessPlans/goldpackage-icon.png'
 
-import patientImage from "../assets/pricing/heartattac.png"
+import patientImage from "../../../assets/pricing/heartattac.png"
 
 
 

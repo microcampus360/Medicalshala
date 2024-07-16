@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import cardio from "../assets/BlackMenu/globalServices/specialities/cardio.png"
-import girl from "../assets/pricing/videos_main_banner.png"
-import doc from "../assets/pricing/videos_doctor_guide.png"
-import pat from "../assets/pricing/videos_patient_guide.png"
+import cardio from "../../../assets/BlackMenu/globalServices/specialities/cardio.png"
+import girl from "../../../assets/pricing/videos_main_banner.png"
+import doc from "../../../assets/pricing/videos_doctor_guide.png"
+import pat from "../../../assets/pricing/videos_patient_guide.png"
 import { Link } from "react-router-dom";
 
 interface Block{

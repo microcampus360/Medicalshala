@@ -1,7 +1,7 @@
 import React from "react";
-import doctors from "../utils/doctors.json"
+import doctors from "../../../utils/doctors.json"
 
-import Nutritionist from "./BlackMenu/Consult/DietPrograms/Nutrisionist";
+import Nutritionist from "../../BlackMenu/Consult/DietPrograms/Nutrisionist";
 
 
 
