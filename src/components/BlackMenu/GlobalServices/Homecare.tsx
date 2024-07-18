@@ -4,7 +4,7 @@ import homecare from "../../../assets/BlackMenu/globalServices/homecare/homecare
 
 
 
-const HomeCare = () =>{
+const Homecare = () =>{
     return(
         <>
 
@@ -29,4 +29,4 @@ const HomeCare = () =>{
     )
 }
 
-export default HomeCare;
+export default Homecare;
